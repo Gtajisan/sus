@@ -14,6 +14,14 @@ class Bot {
     this.cooldowns = new Map();
     this.setupCommands();
 
+    this.bot.on('polling_error', (error) => {
+      logger.error('Polling error:', { error: error.message });
+    });
+
+    this.bot.on('error', (error) => {
+      logger.error('Bot error:', { error: error.message });
+    });
+
     this.bot.on('callback_query', async (query) => {
       try {
         if (query.data && query.data.startsWith('play_music_')) {
@@ -62,19 +70,20 @@ class Bot {
   }
 
   async handleMessage(msg) {
-    const chatId = msg.chat.id.toString();
-    const userId = msg.from.id.toString();
-    const isGroup = msg.chat.type === 'group' || msg.chat.type === 'supergroup';
-    const logData = {
-      chatId,
-      isGroup,
-      text: msg.text,
-      mediaUrl: msg.photo ? msg.photo[msg.photo.length - 1].file_id :
-               msg.video ? msg.video.file_id :
-               msg.document ? msg.document.file_id : null
-    };
+    try {
+      const chatId = msg.chat.id.toString();
+      const userId = msg.from.id.toString();
+      const isGroup = msg.chat.type === 'group' || msg.chat.type === 'supergroup';
+      const logData = {
+        chatId,
+        isGroup,
+        text: msg.text,
+        mediaUrl: msg.photo ? msg.photo[msg.photo.length - 1].file_id :
+                 msg.video ? msg.video.file_id :
+                 msg.document ? msg.document.file_id : null
+      };
 
-    let user = await User.findOne({ telegramId: userId });
+      let user = await User.findOne({ telegramId: userId });
     if (user && user.ban) {
       return this.bot.sendMessage(chatId, `🚫 You are banned from using the bot.\nReason: <b>${user.banReason || "No reason provided"}</b>`, {
         reply_to_message_id: msg.message_id,
@@ -201,6 +210,9 @@ class Bot {
     await mediaDownloader.execute(this.bot, msg);
 
     logger.info('Ignored non-command text', { text: msg.text });
+    } catch (error) {
+      logger.error('Error handling message:', { error: error.message, stack: error.stack });
+    }
   }
 
   start() {
