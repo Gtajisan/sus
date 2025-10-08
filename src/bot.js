@@ -226,8 +226,9 @@ class Bot {
 `;
     
     logger.info(asciiArt, {
-      author: '1dev-hridoy',
-      github: 'https://github.com/1dev-hridoy',
+      author: 'Gtajisan',
+      source: '1dev-hridoy',
+      github: 'https://github.com/Gtajisan',
       api: 'https://sus-apis.onrender.com/'
     });
     
