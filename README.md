@@ -1,7 +1,7 @@
 
 # Sus-Apis Telegram Bot
 ![SUS BOT Banner](https://raw.githubusercontent.com/1dev-hridoy/1dev-hridoy/refs/heads/main/Will%20Come%20True.png)
-<div align="center"> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"> <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"> <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"> <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"> </div>
+<div align="center"> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"> <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"> <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"> <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"> </div>
 
 A feature-rich Telegram bot built with Node.js, offering moderation tools, economy system, entertainment commands, and utility features. Powered by the [Sus-Apis](https://sus-apis.onrender.com/) external API for enhanced functionality.
 
@@ -42,7 +42,7 @@ A feature-rich Telegram bot built with Node.js, offering moderation tools, econo
 ### Prerequisites
 
 -   Node.js 16.x or higher
--   MongoDB database
+-   SQLite (included with better-sqlite3 package)
 -   Telegram Bot Token from [@BotFather](https://t.me/BotFather)
 
 ### Installation
@@ -64,11 +64,11 @@ A feature-rich Telegram bot built with Node.js, offering moderation tools, econo
     
 3.  **Environment Setup**
     
-    Rename `example.env` to `.env` and configure:
+    Create a `.env` file and configure:
     
     ```env
     TELEGRAM_BOT_TOKEN=your_bot_token_here
-    MONGODB_URI=your_mongodb_connection_string
+    SQLITE_DB_PATH=./data/bot.db
     
     ```
     
