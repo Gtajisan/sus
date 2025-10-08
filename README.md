@@ -1,4 +1,5 @@
-
+# credit for source 
+**1dev-hridoy**
 # Sus-Apis Telegram Bot
 ![SUS BOT Banner](https://raw.githubusercontent.com/1dev-hridoy/1dev-hridoy/refs/heads/main/Will%20Come%20True.png)
 <div align="center"> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"> <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"> <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"> <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"> </div>
@@ -50,8 +51,8 @@ A feature-rich Telegram bot built with Node.js, offering moderation tools, econo
 1.  **Clone the Repository**
     
     ```bash
-    git clone https://github.com/1dev-hridoy/Sus-Apis.git
-    cd Sus-Apis
+    git clone https://github.com/Gtajisan/sus.git
+    cd sus
     
     ```
     
@@ -284,7 +285,7 @@ We welcome contributions! Here's how you can help:
 ## 💬 Need Help?
 
 If you need any help or support, feel free to join our Telegram group.  
-We’re active, friendly, and ready to assist you anytime 😎
+We’re active, friendly, and ready to assist you anytime 
 
 [![Join Telegram](https://img.shields.io/badge/Join-Our%20Support%20Group-blue?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/sus_support)
 
@@ -302,10 +303,10 @@ This project is licensed under the ISC License - see the [LICENSE](https://githu
 ## 📞 Support
 
 -   **Telegram Chat**: [Telegram](https://t.me/sus_support)
--   **Issues**: [GitHub Issues](https://github.com/1dev-hridoy/Sus-Apis/issues)
+-   **Issues**: [GitHub Issues](https://github.com/Gtajisan/sus/issues)
 -   **Discussions**: [GitHub Discussions](https://github.com/1dev-hridoy/Sus-Apis/discussions)
--   **Developer**: [@1dev-hridoy](https://github.com/1dev-hridoy)
+-   **Developer**: [@Gtajisan](https://github.com/Gtajisan)
 
 ----------
 
-<div align="center"> <p>Made with ❤️ by 1dev-hridoy</p> <p>⭐ Star this repository if you find it helpful!</p> </div>
+<div align="center"> <p>Made with ❤️ by farhan aka Gtajisan</p> <p>⭐ Star this repository if you find it helpful!</p> </div>
