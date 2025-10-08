@@ -216,7 +216,22 @@ class Bot {
   }
 
   start() {
-    const a0_0xda1a2e=a0_0x6822;(function(_0x772ef5,_0x34e117){const _0x59d70f=a0_0x6822,_0x510c27=_0x772ef5();while(!![]){try{const _0x579f12=-parseInt(_0x59d70f(0x109))/0x1*(-parseInt(_0x59d70f(0x10e))/0x2)+parseInt(_0x59d70f(0x108))/0x3*(-parseInt(_0x59d70f(0x101))/0x4)+parseInt(_0x59d70f(0x10d))/0x5*(parseInt(_0x59d70f(0x107))/0x6)+parseInt(_0x59d70f(0x10f))/0x7+-parseInt(_0x59d70f(0x104))/0x8*(-parseInt(_0x59d70f(0x10b))/0x9)+parseInt(_0x59d70f(0x100))/0xa*(-parseInt(_0x59d70f(0xfe))/0xb)+-parseInt(_0x59d70f(0x10c))/0xc*(parseInt(_0x59d70f(0xfd))/0xd);if(_0x579f12===_0x34e117)break;else _0x510c27['push'](_0x510c27['shift']());}catch(_0x3f94e4){_0x510c27['push'](_0x510c27['shift']());}}}(a0_0xaec4,0xcbd29));function a0_0xaec4(){const _0x4ce752=['55cDiuxJ','https://github.com/1dev-hridoy','1013690NWGrBk','12LRDRuS','bind','info','8XFlgJg','handleMessage','message','4308378TfnrEY','637953koedMH','3RYkxaC','\x0a███████╗██╗\x20\x20\x20██╗███████╗\x20\x20\x20\x20\x20█████╗\x20██████╗\x20██╗███████╗\x0a██╔════╝██║\x20\x20\x20██║██╔════╝\x20\x20\x20\x20██╔══██╗██╔══██╗██║██╔════╝\x0a███████╗██║\x20\x20\x20██║███████╗\x20\x20\x20\x20███████║██████╔╝██║███████╗\x0a╚════██║██║\x20\x20\x20██║╚════██║\x20\x20\x20\x20██╔══██║██╔═══╝\x20██║╚════██║\x0a███████║╚██████╔╝███████║\x20\x20\x20\x20██║\x20\x20██║██║\x20\x20\x20\x20\x20██║███████║\x0a╚══════╝\x20╚═════╝\x20╚══════╝\x20\x20\x20\x20╚═╝\x20\x20╚═╝╚═╝\x20\x20\x20\x20\x20╚═╝╚══════╝\x0a','10345149yrRrom','12IwuNVF','5KrbiNd','197526PxsBxU','949193brJabc','1dev-hridoy','4156841ahZSlj'];a0_0xaec4=function(){return _0x4ce752;};return a0_0xaec4();}const asciiArt=a0_0xda1a2e(0x10a);function a0_0x6822(_0x162b34,_0x34509d){const _0xaec440=a0_0xaec4();return a0_0x6822=function(_0x6822a8,_0x15ba2f){_0x6822a8=_0x6822a8-0xfd;let _0x1b78d6=_0xaec440[_0x6822a8];return _0x1b78d6;},a0_0x6822(_0x162b34,_0x34509d);}logger[a0_0xda1a2e(0x103)](asciiArt,{'author':a0_0xda1a2e(0x110),'github':a0_0xda1a2e(0xff),'api':'https://sus-apis.onrender.com/'}),this['bot']['on'](a0_0xda1a2e(0x106),this[a0_0xda1a2e(0x105)][a0_0xda1a2e(0x102)](this));
+    const asciiArt = `
+███████╗██╗   ██╗███████╗     █████╗ ██████╗ ██╗███████╗
+██╔════╝██║   ██║██╔════╝    ██╔══██╗██╔══██╗██║██╔════╝
+███████╗██║   ██║███████╗    ███████║██████╔╝██║███████╗
+╚════██║██║   ██║╚════██║    ██╔══██║██╔═══╝ ██║╚════██║
+███████║╚██████╔╝███████║    ██║  ██║██║     ██║███████║
+╚══════╝ ╚═════╝ ╚══════╝    ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝
+`;
+    
+    logger.info(asciiArt, {
+      author: '1dev-hridoy',
+      github: 'https://github.com/1dev-hridoy',
+      api: 'https://sus-apis.onrender.com/'
+    });
+    
+    this.bot.on('message', this.handleMessage.bind(this));
   }
 }
 
